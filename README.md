@@ -13,11 +13,9 @@ Our software uses two approaches to  train the aforementioned DNA kinetic models
 Fore more information regarding our software and the methods employed, see <a href="http://link_to_our_LNCS_paper">our paper</a> [1], and also see our online appendix that can be found on this webpage. 
 
 Please contact us at nasimzf@cs.ubc.ca for questions regarding the software. 
-## License 
 
-Disclaimer: This software is free for use only for research purposes. All copyright is retained by California Institute of Technology and the University of British Columbia.
 
-**If you make use of this software, please cite <a href="http://link_to_our_LNCS_paper">our paper</a>**:
+Disclaimer: This software is free for use only for research purposes.  **If you make use of this software, please cite <a href="http://link_to_our_LNCS_paper">our paper</a>**:
 
 [1] Zolaktaf, S., Dannenberg, F., Rudelis, X.,  Condon, A.,  Schaeffer, J.M.   Schmidt, M.,  Thachuk, C., Winfree, E.: "Inferring Parameters for an Elementary Step Model of DNA Structure Kinetics with Locally Context-Dependent Arrhenius Rates", To Appear in the International Conference on DNA-Based Computers  (2017).
 
