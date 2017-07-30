@@ -10,7 +10,7 @@ Our software uses two approaches to  train the aforementioned DNA kinetic models
 
 - A  Markov chain Monte Carlo (MCMC) approach that learns an ensemble of parameter sets. 
 
-Fore more information regarding our software and the methods employed, see <a href="http://link_to_our_LNCS_paper">our paper</a> [1], and also see our online appendix that can be found on this webpage. 
+Fore more information regarding our software and the methods employed, see <a href="http://link_to_our_LNCS_paper">our paper</a> [1]. Also see our online appendix that can be found on this webpage. 
 
 Please contact us at nasimzf@cs.ubc.ca for questions regarding the software. 
 
