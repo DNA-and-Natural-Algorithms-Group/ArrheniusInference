@@ -1,0 +1,23 @@
+[learndnakinetics]
+rate_method = Arrhenius
+#rate_method  is the kinetic model. Should be Metropolis or Arrhenius. Options are available in myenums.ModelName
+parameter_folder = Test 
+#Parameter_folder is the name of the folder where the parameters are written to when you run learndnakinetics.py.
+# Also, if you run samplemcmc.py the ensemble of parameters from emcee are written in this folder. 
+n_processors =15
+#n_processors is the number of processors for learndnakinetics.py (consequently for samplemcmc.py)
+
+[plot]
+learned_parameterset = Arrheniusinitial
+#learned_parameterset is the parameter set to plot. Should be Arrheniusinitial, ArrheniusMAP, ArrheniusMCMCmode, Arrheniusmcmc, Metropolisinitial, MetropolisMAP, MetropolisMCMCmode, MetropolisMCMC. Options are avaialble in  the myenums.LearnedParameters file.
+pkl_file =Test/Test0
+#pkl_file is the name of the pkl file to load and contains the ensemble of parameters from emcee. 
+n_processors_plot = 1
+#n_processors_plot is the number of processors
+
+[loadmcmc]
+pklFile =17-06-02Arrheniusemcee/17-06-02Arrheniusemceeburn14
+#pkl_file is the name of the pickle file to load and contains the ensemble of parameters from emcee 
+
+[parent]
+NUPACK_bin = /ubc/cs/research/beta/People/nasimzf/PhD/software/nupack/bin/
