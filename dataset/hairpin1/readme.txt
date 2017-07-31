@@ -1,0 +1,2 @@
+Fig3_T_1  = Fig 3 Poly(T) hairpin closing from  Bonnet, Gregoire. "Dynamics of DNA breathing and folding for molecular recognition and computation." (2000) or Goddard, Noel L., et al. "Sequence dependent rigidity of single stranded DNA." Physical review letters 85.11 (2000): 2400.
+Fig3_T_0  = Fig 3.28 hairpin opening   from Bonnet, Gregoire. "Dynamics of DNA breathing and folding for molecular recognition and computation." (2000).

@@ -1,0 +1,1 @@
+Fig2.xlsx is Fig. 2d from Machinek, R.R., Ouldridge, T.E., Haley, N.E., Bath, J., TurberField, A.J.: Programmable energy landscapes for kinetic control of DNA strand displacement. Nature Communications 5 (2014)

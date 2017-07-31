@@ -1,0 +1,1 @@
+Fig6a.xlsx is Fig. 6a from Reynaldo, L.P., Vologodskii, A.V., Neri, B.P., Lyamichev, V.I.: The kinetics of oligonucleotide replacements. Journal of Molecular Biology 297, 511–520 (2000)

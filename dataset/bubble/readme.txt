@@ -1,0 +1,1 @@
+Fig4.csv is Fig 4 from Altan-Bonnet, G., Libchaber, A., Krichevsky, O.: Bubble dynamics in doublestranded DNA. Physical Review Letters 90, 138101 (2003)
