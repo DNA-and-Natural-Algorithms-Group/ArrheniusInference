@@ -20,4 +20,4 @@ pklFile =17-06-02Arrheniusemcee/17-06-02Arrheniusemceeburn14
 #pkl_file is the name of the pickle file to load and contains the ensemble of parameters from emcee 
 
 [parent]
-NUPACK_bin = /ubc/cs/research/beta/People/nasimzf/PhD/software/nupack/bin/
+NUPACK_bin = /path/to/nupack/bin
