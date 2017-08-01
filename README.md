@@ -27,8 +27,10 @@ Disclaimer: This software is free for use only for research purposes.  **If you 
 | ------------- |:-------------:|
 |Python2 |2.7.12 |
 |<a href="http://www.nupack.org/">NUPACK</a>  [3]    | 3.0.4 |
-| <a href="https://www.scipy.org/">SciPy</a> | 0.19.0      |
-| <a href="http://dan.iel.fm/emcee/current/user/pt/"> emcee</a> [4]| 2.2.1      | 
+|numpy|1.12.1+| 
+| <a href="https://www.scipy.org/">SciPy</a> | 0.19.0+     |
+| enum34 | 1.1.6+ | 
+| <a href="http://dan.iel.fm/emcee/current/user/pt/"> emcee</a> [4]| 2.2.1+      | 
 
 ## Setup 
 - Download and install the requirements. 
