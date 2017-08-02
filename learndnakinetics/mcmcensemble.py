@@ -1,10 +1,7 @@
 import numpy as np
 import numpy as np
 import emcee
-import learndnakinetics
 import cPickle as pickle
-from copy import deepcopy
-import sys
 import parent
 import learndnakinetics
 import myenums
