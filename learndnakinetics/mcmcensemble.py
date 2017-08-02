@@ -14,7 +14,7 @@ def mcmc_ensemble():
 	
 	# use 100 walkers, where each walkers takes 50 * 15 = 750 steps. Results are saved every 50 (N_STEPS) steps
 	FINAL_STEP =15
-	N_WALKERS =100
+	N_WALKERS =100 #number of  walkers should be even and  at least twice the number of parameters
 	N_STEPS =50
 	N_INITIAL_WALKERS = 100 * N_WALKERS
 	# An initial parameter set might lead to lnprobability of -np.inf ( equivalently probability 0 or error npinf) and the walker might not be able to update to a higher probability during the next iterations.
