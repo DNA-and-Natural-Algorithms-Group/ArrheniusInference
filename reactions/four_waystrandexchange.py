@@ -78,7 +78,7 @@ class  FourWayBranchComplex(ParentComplex):
 			fs.close()
 		except:
 			self.energies = dict()
-			print "ENERGY doesn't exist "
+			print myenums.Permanent_Folder.ENERGY.value +" creating files"
 			shell = Popen("bash", stdin=PIPE, stdout=PIPE)
 			for state in self.statespace:
 

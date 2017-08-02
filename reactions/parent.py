@@ -195,7 +195,7 @@ class ParentComplex(object):
         except:
            
             self.energies = dict() 
-            print myenums.Permanent_Folder.ENERGY.value +" doesnt't exist!"
+            print myenums.Permanent_Folder.ENERGY.value +" creating files"
             shell = Popen("bash", stdin=PIPE, stdout=PIPE)   
             for state in self.statespace: 
                 filename = auxilary_f +self.docID

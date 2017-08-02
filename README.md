@@ -87,7 +87,7 @@ To execute the MCMC ensemble approach:
   * In **config_file.txt**:
   
     * Set *rate_method* to be Arrhenius or Metropolis.
-    * Set *parameter_folder*  to be the path to a directory to save results.  In this folder,  the sample parameter sets of each iteration of the optimization will be saved. Additionally,  the samples are saved in pickle format. 
+    * Set *parameter_folder*  to be the path to a directory to save results.  In this folder,  the sample parameter sets of each iteration of the optimization will be saved. Additionally,  the samples are saved in pickle format (after each walker has taken N_STEPS steps). 
     * Set *n_processors* to be the number of processors  for mutliprocessing the computation of the objective function.  
     * Set *NUPACK_bin* to be the path to the bin folder in NUPACK.
  

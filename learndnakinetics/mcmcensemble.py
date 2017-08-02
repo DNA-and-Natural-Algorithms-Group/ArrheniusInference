@@ -1,5 +1,4 @@
 import numpy as np
-import numpy as np
 import emcee
 import cPickle as pickle
 import parent
