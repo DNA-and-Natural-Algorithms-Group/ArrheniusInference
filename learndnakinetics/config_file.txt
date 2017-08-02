@@ -7,6 +7,16 @@ parameter_folder = Test
 n_processors =15
 #n_processors is the number of processors for learndnakinetics.py (consequently for samplemcmc.py)
 
+[mcmcensemble]
+N_WALKERS =100
+#Number of  walkers should be even and  at least twice the number of parameters
+N_STEPS =50
+#Results are saved every 50 (N_STEPS) steps. But note that the first few iterations are not saved (see what the N_INITIAL_WALKERS does for explanation)!
+FINAL_STEP =15
+# use 100 walkers, where each walkers takes 50 * 15 = 750 steps.
+N_INITIAL_WALKERS = 200
+# An initial parameter set might lead to lnprobability of -np.inf ( equivalently probability 0 or error npinf) and the walker might not be able to update to a higher probability during the next iterations. Therefore we initialize N_INITAL_WALKERS walkers, but only  use N_WALKERS walkers which do not have an lnprobability of -np.inf
+
 [plot]
 learned_parameterset = Arrheniusinitial
 #learned_parameterset is the parameter set to plot. Should be Arrheniusinitial, ArrheniusMAP, ArrheniusMCMCmode, Arrheniusmcmc, Metropolisinitial, MetropolisMAP, MetropolisMCMCmode, MetropolisMCMC. Options are avaialble in  the myenums.LearnedParameters file.

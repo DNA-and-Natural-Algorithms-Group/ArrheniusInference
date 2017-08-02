@@ -1,25 +1,33 @@
 import numpy as np
-import emcee
 import cPickle as pickle
+import emcee
+import sys
+import os
+sys.path.insert(0,os.path.realpath('../reactions'))
 import parent
 import learndnakinetics
 import myenums
+import ConfigParser
 
 def mcmc_ensemble():
 	"""This function runs the MCMC ensemble method with the emcee software!"""
-	
-	# use 100 walkers, where each walkers takes 50 * 15 = 750 steps. Results are saved every 50 (N_STEPS) steps
-	FINAL_STEP =15
-	N_WALKERS =100 #Number of  walkers should be even and  at least twice the number of parameters
-	N_STEPS =50 #Results are saved every 50 (N_STEPS) steps
-	N_INITIAL_WALKERS = 100 * N_WALKERS
+
+
+	configParser = ConfigParser.ConfigParser()
+	configParser.readfp(open(r'config_file.txt'))
+	CONFIG_NAME = 'mcmcensemble'
+
+	N_WALKERS= configParser.getint(CONFIG_NAME, 'N_WALKERS')
+	N_STEPS= configParser.getint(CONFIG_NAME, 'N_STEPS') #Results are saved every 50 (N_STEPS) steps
+	FINAL_STEP= configParser.getint(CONFIG_NAME, 'FINAL_STEP')
+	N_INITIAL_WALKERS= configParser.getint(CONFIG_NAME, 'N_INITIAL_WALKERS') * N_WALKERS
 	# An initial parameter set might lead to lnprobability of -np.inf ( equivalently probability 0 or error npinf) and the walker might not be able to update to a higher probability during the next iterations.
 	# Therefore we initialize N_INITAL_WALKERS walkers, but only  use N_WALKERS walkers which do not have an lnprobability of -np.inf
-	
-	
+
+
 	learndnakinetics.METHOD = myenums.MethodName.MCMCNAME.value  # letting the software know to use the MCMC ensemble approach
 	learndnakinetics.set_configuration() # setting some configurations
-	
+
 	#Initializing the parameters for each walker"""
 	if parent.rate_method ==myenums.ModelName.METROPOLISMODELNAME.value :
 		# The Metropolis model has 2 parameters """
