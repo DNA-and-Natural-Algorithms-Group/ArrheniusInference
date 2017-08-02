@@ -23,6 +23,8 @@ def mcmc_ensemble():
 	N_INITIAL_WALKERS= configParser.getint(CONFIG_NAME, 'N_INITIAL_WALKERS') * N_WALKERS
 	# An initial parameter set might lead to lnprobability of -np.inf ( equivalently probability 0 or error npinf) and the walker might not be able to update to a higher probability during the next iterations.
 	# Therefore we initialize N_INITAL_WALKERS walkers, but only  use N_WALKERS walkers which do not have an lnprobability of -np.inf
+	print "An initial parameter set might lead to lnprobability of -np.inf ( equivalently probability 0 or error npinf) and the walker might not be able to update to a higher probability during the next iterations. Therefore, only parameter sets which do not have an lnprobability of -np.inf are chosen from a larger pool to run emcee with! Note that the mcme ensemble sampling with emcee is now yet started !!!"
+
 
 
 	learndnakinetics.METHOD = myenums.MethodName.MCMCNAME.value  # letting the software know to use the MCMC ensemble approach
@@ -76,7 +78,7 @@ def mcmc_ensemble():
 		raise ValueError('Increase N_INITIAL_WALKERS')
 	
 	
-	
+	"Starting mcme ensemble sampling with emcee now!!!!"
 	for i in range (0, FINAL_STEP) :
 		#Each walker will take FINAL_STEP * N_STEPS iterations. The results are saved every N_STEPS steps """
 		sampler = emcee.EnsembleSampler(N_WALKERS, n_dim, learndnakinetics.objective_function)

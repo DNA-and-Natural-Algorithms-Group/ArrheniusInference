@@ -91,7 +91,7 @@ To execute the MCMC ensemble approach:
     * Set *n_processors* to be the number of processors  for mutliprocessing the computation of the objective function.  
     * Set *NUPACK_bin* to be the path to the bin folder in NUPACK.
     * Set *N_WALKERS*  to be the number of  walkers. This should be even and at least twice the numbre of parameters. 
-    * Set *N_STEPS* to be the number of steps every walker has to take untill samples  are saved  in pkl format.  But note that the first few iterations are not saved (see what the N_INITIAL_WALKERS does for explanation)!
+    * Set *N_STEPS* to be the number of steps every walker has to take (after emcee has started!) until samples  are saved  in pkl format.  But note that the first few iterations are not saved (see what the N_INITIAL_WALKERS does for explanation)!
     * Set *FINAL_STEP* to be an integer, such that every walker will take *N_STEPS* * *FINAL_STEP* iterations in total.
     * Set *N_INITIAL_WALKERS*  to be an integer.  An initial parameter set might lead to lnprobability of -np.inf ( equivalently probability 0 or error npinf) and the walker might not be able to update to a higher probability during the next iterations. Therefore, only parameter sets which do not have an lnprobability of -np.inf are chosen from a larger pool to run emcee with!  
  
