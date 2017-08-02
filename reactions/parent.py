@@ -195,7 +195,7 @@ class ParentComplex(object):
         except:
            
             self.energies = dict() 
-            print myenums.Permanent_Folder.ENERGY.value +" creating files"
+            print myenums.Permanent_Folder.ENERGY.value +" creating RESUBLE files in the simplifiedstatespace folder!.   Please wait untill you see a message showing the computed lnprobability and iteration time! These messages will not appear again in the next iteration!"
             shell = Popen("bash", stdin=PIPE, stdout=PIPE)   
             for state in self.statespace: 
                 filename = auxilary_f +self.docID
