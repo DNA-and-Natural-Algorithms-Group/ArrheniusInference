@@ -83,7 +83,7 @@ def mcmc_ensemble():
 		#Each walker will take FINAL_STEP * N_STEPS iterations. The results are saved every N_STEPS steps """
 		sampler = emcee.EnsembleSampler(N_WALKERS, n_dim, learndnakinetics.objective_function)
 		pos, prob, state = sampler.run_mcmc(pos, N_STEPS)
-		f_out = open(learndnakinetics.parameterFolder + '/' +learndnakinetics.parameterFolder  + 'burn' +str(i)+'.pkl', 'wb')
+		f_out = open(learndnakinetics.parameter_file + '/' +learndnakinetics.parameter_file  + 'burn' +str(i)+'.pkl', 'wb')
 		pickle.dump(n_dim, f_out)
 		pickle.dump(N_WALKERS, f_out)
 		pickle.dump(N_STEPS * i, f_out)
