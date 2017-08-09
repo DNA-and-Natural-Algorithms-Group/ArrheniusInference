@@ -31,6 +31,7 @@ Disclaimer: This software is free for use only for research purposes.  **If you 
 |SciPy | 0.19.0+     |
 | enum34 | 1.1.6+ | 
 |statistics| 1.0.3.5+|
+|matplotlib| 2.0.0+|
 |seaborn|0.7.1+|
 | ConfigParser | 3.5.0+ | 
 | <a href="http://dan.iel.fm/emcee/current/user/pt/"> emcee</a> [4]| 2.2.1+      | 
