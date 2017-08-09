@@ -30,6 +30,8 @@ Disclaimer: This software is free for use only for research purposes.  **If you 
 |numpy|1.12.1+| 
 |SciPy | 0.19.0+     |
 | enum34 | 1.1.6+ | 
+|statistics| 1.0.3.5+|
+|seaborn|0.7.1+|
 | ConfigParser | 3.5.0+ | 
 | <a href="http://dan.iel.fm/emcee/current/user/pt/"> emcee</a> [4]| 2.2.1+      | 
 
@@ -102,7 +104,7 @@ To reproduce experimental plots  of the literature:
   * In **config_file.txt**: 
     * Set *rate_method* to be Arrhenius or Metropolis.
     * Set *learned_parameterset* to be one of the options from myenums.LearnedParameters, i.e., Arrheniusinitial, ArrheniusMAP, ArrheniusMCMCmode, ArrheniusMCMC, Metropolisinitial,  MetropolisMAP,  MetropolisMCMCmode,  MetropolisMCMC. 
-    * If *learned_parameterset* is equal to ArrheniusMCMC or MetropolisMCMC, set *pkl_file* to be the path to a pkl file  from the MCMC ensemble method. Note that rate_method, learned_parameterset, and the pkl file should  either all correspond to the Arrhenius model or all correspond to the Metropolis model. 
+    * If *learned_parameterset* is equal to ArrheniusMCMC or MetropolisMCMC, set *pkl_file_plot* to be the path to a pkl file  from the MCMC ensemble method. Note that rate_method, learned_parameterset, and the pkl file should  either all correspond to the Arrhenius model or all correspond to the Metropolis model. 
     * Set *n_processors* to be the number of processors  for paralyzing the computation of the objective function.  
     * Set *n_processors_plot* to be the number of processors for multiprocessing the ploting. 
     * Set *NUPACK_bin* to be the path to the bin folder in NUPACK. 
@@ -111,7 +113,7 @@ To reproduce experimental plots  of the literature:
  To draw boxplots and correlation plots for the samples from the MCMC ensemble method: 
   * In **config_file.txt**:
     * Set *rate_method* to be *Arrhenius* or *Metropolis*.
-    *  Set *pkl_file* to be the path to a pkl file to read from the MCMC ensemble method. Note that rate_Method should be consistent with the pkl file. 
+    *  Set *pkl_file_load* to be the path to a pkl file to read from the MCMC ensemble method. Note that rate_Method should be consistent with the pkl file. 
     * Set *parameter_folder* to be the path to a directory to save results.  
   * Run **loadmcmc.py**. 
 		

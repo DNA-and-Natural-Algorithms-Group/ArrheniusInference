@@ -280,7 +280,7 @@ if __name__ == "__main__":
     configParser = ConfigParser.ConfigParser()
     configParser.readfp(open(r'config_file.txt'))
     CONFIG_NAME = 'loadmcmc'
-    MCMC_pkl_file= configParser.get(CONFIG_NAME, 'pklFile')
+    MCMC_pkl_file= configParser.get(CONFIG_NAME, 'pkl_file_load')
     load_MCMC(MCMC_pkl_file)
     print("Mean acceptance fraction: {0:.3f}".format(np.mean(sampler.acceptance_fraction)))
     correlation_plot( MCMC_pkl_file +"/2correlation/")

@@ -312,7 +312,7 @@ def objective_function(thetap):
 		output = open('local_context_uni.pkl', 'wb')
 		pickle.dump(local_context_uni, output)
 
-	
+
 	regularizer = 0
 	if parent.rate_method == myenums.ModelName.ARRHENIUSMODELNAME.value :
 		for i in range( len(theta) ) :

@@ -396,7 +396,7 @@ def main():
 	if not os.path.exists("plot/" + str(learned_parameterset)):
 		os.makedirs("plot/" + str(learned_parameterset))
 
-	traintestset, predicted_logreactionrateconstants, experimental_logreactionrateconstants, plot_probs, title_name = learndnakinetics.plot_rates(configParser.get(CONFIG_NAME, 'pkl_file'),  learned_parameterset , USE_ONLY_FINALSTEP)
+	traintestset, predicted_logreactionrateconstants, experimental_logreactionrateconstants, plot_probs, title_name = learndnakinetics.plot_rates(configParser.get(CONFIG_NAME, 'pkl_file_plot'),  learned_parameterset , USE_ONLY_FINALSTEP)
 	theta = []
  
 	for t in plot_probs:
