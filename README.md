@@ -17,9 +17,8 @@ Please contact us at nasimzf@cs.ubc.ca for questions regarding the software.
 
 Disclaimer: This software is free for use only for research purposes.  **If you make use of this software, please cite <a href="http://link_to_our_LNCS_paper">our paper</a>**:
 
-[1] Zolaktaf, S., Dannenberg, F., Rudelis, X.,  Condon, A.,  Schaeffer, J.M.   Schmidt, M.,  Thachuk, C., Winfree, E.: "Inferring Parameters for an Elementary Step Model of DNA Structure Kinetics with Locally Context-Dependent Arrhenius Rates", To Appear in the International Conference on DNA-Based Computers (DNA 23), LNCS 10467, pp. 172–187, 2017.
 
-
+[1] Zolaktaf, S., Dannenberg, F., Rudelis, X., Condon, A., Schaeffer, J.M. Schmidt, M., Thachuk, C., Winfree, E.: "Inferring Parameters for an Elementary Step Model of DNA Structure Kinetics with Locally Context-Dependent Arrhenius Rates", DNA Computing and Molecular Programming (DNA23), Lecture Notes in Computer Science (LNCS) 10467, pp. 172-187, 2017.
 ## Requirements 
 
 
