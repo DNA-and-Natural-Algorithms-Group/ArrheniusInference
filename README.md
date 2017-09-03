@@ -1,6 +1,6 @@
 ## Introduction 
 
-This is a  Python framework  for learning the parameters of the  <a href="http://link_to_our_LNCS_paper">Arrhenius model</a>, an elementary step
+This is a  Python framework  for learning the parameters of the  <a href="https://link.springer.com/chapter/10.1007/978-3-319-66799-7_12">Arrhenius model</a>, an elementary step
 model of DNA structure kinetics with locally context-dependent Arrhenius rates [1].   Additonally,  it  can infer parameters for the Metropolis model implemented  in Multistrand [2]. 
 
 Our software employs a reduced state space that is a strict subset of the full Multistrand state space, enabling efficient sparse matrix computations of mean first passage times, from which reaction rate constants are predicted.  
