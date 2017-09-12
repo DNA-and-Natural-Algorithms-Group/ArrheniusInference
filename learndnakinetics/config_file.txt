@@ -19,7 +19,7 @@ N_INITIAL_WALKERS = 200
 
 [plot]
 learned_parameterset = Arrheniusinitial
-#learned_parameterset is the parameter set to plot. Should be Arrheniusinitial, ArrheniusMAP, ArrheniusMCMCmode, Arrheniusmcmc, Metropolisinitial, MetropolisMAP, MetropolisMCMCmode, MetropolisMCMC. Options are avaialble in  the myenums.LearnedParameters file.
+#learned_parameterset is the parameter set to plot. Should be Arrheniusinitial, ArrheniusMAP, ArrheniusMCMCmode, ArrheniusMCMC, Metropolisinitial, MetropolisMAP, MetropolisMCMCmode, MetropolisMCMC. Options are avaialble in  the myenums.LearnedParameters file.
 pkl_file_plot = /path/to/pkl/file
 #pkl_file_plot is the name of the pkl file to load and contains the ensemble of parameters from emcee.
 n_processors_plot = 1
