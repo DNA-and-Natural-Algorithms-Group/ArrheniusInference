@@ -1,4 +1,4 @@
-"100 parameters used in paper, sorted according to lnprobability"
+"100 Metropolis parameters from the MCMC ensemble method, sorted according to lnprobability. The lowest error parameter is the last parameter set."
 lnprobability kUni kBi nuisance
 -428.951414232 353324368.531 56570008.0945 1.88461272423 
 -426.249228796 347786840.402 68430655.2375 1.95305139297 
