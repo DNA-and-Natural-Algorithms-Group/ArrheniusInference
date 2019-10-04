@@ -55,6 +55,9 @@ Our software contains three directories, namely, learndnakinetics, reactions, an
   * **loadmcmc.py**: this file draws boxplots and correlation plots for the samples obtained from the MCMC ensemble method. 
   * **myenums.py**: this file contains enum types used in the framework. 
   * **configfile.txt**: this file contains variables for configularation. 
+  * **parameters/metropolis_samples.txt**: this file contains 100 metropolis parameters from the MCMC ensemble method. 
+  * **parameters/arrhenius_samples.txt**: this file contains 100 arrhenius parameters from the MCMC ensemble method.  
+
 
 - **reactions**: 
    * **parent.py**: this file contains code that different types of reactions have in common.
