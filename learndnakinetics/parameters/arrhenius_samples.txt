@@ -1,4 +1,4 @@
-"100 arrhenius parameters from the MCMC ensemble method, sorted according to lnprobability. The lowest error parameter is the last parameter set."
+"100 Arrhenius parameters from the MCMC ensemble method, sorted according to lnprobability. The lowest error parameter is the last parameter set."
 lnprobability lnAstack Estack lnAloop Eloop lnAend Eend lnAstack+loop Estack+loop lnAstack+end Estack+end lnAloop+end Eloop+end lnAstack+stack Estack+stack alpha nuisance
 67.6670934455 17.697886698 7.50790718153 16.4463235976 4.65996679326 1.29290539419 -3.69705387691 -1.49753551225 -5.38208595319 5.49589811313 -3.18097669971 7.35916565988 4.9770512474 -1.58706986773 -6.97582863793 20.890921777 0.454008988473 
 74.521163543 6.95320400649 1.01976175676 25.2827410906 10.0305892266 3.61744769029 -2.66208135941 -1.52855637191 -5.00245170994 0.95798095564 -8.33934683259 10.3157191645 -2.06045096735 0.260391230444 -5.24272927467 9.24422025135 0.474452972553 
